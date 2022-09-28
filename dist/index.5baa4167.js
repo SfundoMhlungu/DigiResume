@@ -845,7 +845,8 @@ function Socials() {
                     {
                         tag: "a",
                         attrs: {
-                            href: "./Resume.pdf"
+                            href: "https://github.com/SfundoMhlungu/DigiResume/blob/main/public/Resume.pdf",
+                            download: "download"
                         },
                         children: [
                             "Download Resume"
