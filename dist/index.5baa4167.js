@@ -704,7 +704,7 @@ function Project(project) {
     return (0, _atomicus.createElement)((0, _projectJs.Project)(project));
 }
 
-},{"./components/hero.js":"4OLp4","./components/work":"1A9D6","@parcel/transformer-js/src/esmodule-helpers.js":"2mdku","atomicus":"9iIp8","./components/moreWork.js":"bpXmD","./components/Project.js":"iHPLt","./Pub.js":"BUIp7"}],"4OLp4":[function(require,module,exports) {
+},{"./components/hero.js":"4OLp4","./components/work":"1A9D6","./components/moreWork.js":"bpXmD","atomicus":"9iIp8","./components/Project.js":"iHPLt","./Pub.js":"BUIp7","@parcel/transformer-js/src/esmodule-helpers.js":"2mdku"}],"4OLp4":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Hero", ()=>Hero);
@@ -716,7 +716,7 @@ function atag(href, text) {
         tag: "a",
         attrs: {
             href,
-            tagert: "_blank"
+            target: "_blank"
         },
         children: [
             text
@@ -816,7 +816,7 @@ function Socials() {
                     atag("https://www.linkedin.com/in/sfundo-mhlungu-331588168", "Linkedin"),
                     atag("https://github.com/SfundoMhlungu", "Github"),
                     atag("https://dev.to/sfundomhlungu", "dev.to"),
-                    atag("./assets/resume.pdf", "Download Resume"), 
+                    atag("./assets/React-js-ts Resume.pdf", "Download Resume"), 
                 ]
             }
         ]

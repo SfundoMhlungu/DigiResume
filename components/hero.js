@@ -4,7 +4,7 @@ function atag(href, text){
         tag: "a",
         attrs:{
         href,
-        tagert: "_blank"
+        target: "_blank"
         },
         children: [text]
 
@@ -108,7 +108,7 @@ export function Socials(){
                     atag("https://www.linkedin.com/in/sfundo-mhlungu-331588168", "Linkedin"),
                     atag("https://github.com/SfundoMhlungu", "Github"),
                     atag("https://dev.to/sfundomhlungu", "dev.to"),
-                    atag("./assets/resume.pdf", "Download Resume"),
+                    atag("./assets/React-js-ts Resume.pdf", "Download Resume"),
                 ]
             }
         ]
