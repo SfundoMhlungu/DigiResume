@@ -1,4 +1,32 @@
 
+ async function createBlobO(){
+    let b =  await fetch("/Resume.pdf")
+    let blob = await b.blob()
+    const a = document.createElement("a")
+    a.download =  "Resume.pdf"
+    a.href = URL.createObjectURL(blob)
+    document.body.appendChild(a)
+    a.click()
+    document.body.removeChild(a)
+    console.log(blob)
+   
+}
+
+function downloadFile(url, fileName) {
+    fetch(url, { method: 'get', mode: 'no-cors', referrerPolicy: 'no-referrer' })
+      .then(res => res.blob())
+      .then(res => {
+        const aElement = document.createElement('a');
+        aElement.setAttribute('download', fileName);
+        const href = URL.createObjectURL(res);
+        aElement.href = href;
+        aElement.setAttribute('target', '_blank');
+        aElement.click();
+        URL.revokeObjectURL(href);
+      });
+  };
+
+
 function atag(href, text){
     return    {
         tag: "a",
@@ -108,7 +136,14 @@ export function Socials(){
                     atag("https://www.linkedin.com/in/sfundo-mhlungu-331588168", "Linkedin"),
                     atag("https://github.com/SfundoMhlungu", "Github"),
                     atag("https://dev.to/sfundomhlungu", "dev.to"),
-                    atag("/Resume.pdf", "Download Resume"),
+                   {
+                       tag: "a",
+                       attrs: {
+                          href: "./Resume.pdf"
+                        
+                       },
+                       children: ["Download Resume"]
+                   }
                 ]
             }
         ]
