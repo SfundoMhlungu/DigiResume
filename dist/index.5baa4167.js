@@ -816,7 +816,7 @@ function Socials() {
                     atag("https://www.linkedin.com/in/sfundo-mhlungu-331588168", "Linkedin"),
                     atag("https://github.com/SfundoMhlungu", "Github"),
                     atag("https://dev.to/sfundomhlungu", "dev.to"),
-                    atag("./assets/React-js-ts Resume.pdf", "Download Resume"), 
+                    atag("/Resume.pdf", "Download Resume"), 
                 ]
             }
         ]
